@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Nicolas — Junior Software Developer</title>
+  <meta name="description" content="Junior software developer" >
+  <meta name="theme-color" content="#0b1736">
+
+  <!-- Icon sets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="Styles/Main.css">
+  <link rel="stylesheet" href="Styles/Home.css">
+  <link rel="stylesheet" href="Styles/About.css">
+  <link rel="stylesheet" href="Styles/Projects.css">
+  <link rel="stylesheet" href="Styles/Contact.css">
+  <link rel="stylesheet" href="Styles/Header&Footer.css">
+  <link rel="stylesheet" href="Styles/Mobile nav.css">
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <nav class="nav" role="navigation" aria-label="Primary">
+      <a class="logo" href="#home" title="Go to top">Nicolas</a>
+
+      <!-- Botón nav móvil -->
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-list" id="primary-nav">
+        <li><a href="#home"><i class="bi bi-house"></i><span data-en="Home" data-fr="Accueil"></span></a></li>
+        <li><a href="#about"><i class="bi bi-person"></i><span data-en="About" data-fr="À propos"></span></a></li>
+        <li><a href="#projects"><i class="bi bi-code-slash"></i><span data-en="Projects" data-fr="Projets"></span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope"></i><span data-en="Contact" data-fr="Contact"></span></a></li>
+        <li><a class="btn" href="#" id="lang-btn">FR</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Backdrop para cerrar -->
+  <div class="nav-backdrop" hidden></div>
+
+  <!-- SOCIAL BAR  -->
+  <aside class="social-bar" aria-label="Social links">
+    <a href="mailto:nicolasargumeropalacios@gmail.com" class="social" aria-label="Email">
+      <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+    </a>
+    <a href="https://github.com/NicoPalacios12" class="social" target="_blank" rel="noopener" aria-label="GitHub (opens in new tab)">
+      <i class="bi bi-github" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/nicolas-palacios-23a700352/" class="social" target="_blank" rel="noopener" aria-label="LinkedIn (opens in new tab)">
+      <i class="bi bi-linkedin" aria-hidden="true"></i>
+    </a>
+  </aside>
+
+  <main id="main">
+    <!-- HOME  -->
+    <section id="home" class="section yo">
+      <div class="container yo-grid">
+        <div class="yo-photo">
+          <img src="Images/Nicolas-photo.jpeg" alt="" class="profile-photo">
+        </div>
+        <div class="yo-copy">
+          <h1 data-en="Hi, I'm Nicolas" data-fr="Salut, je suis Nicolas" id="name" class="name"></h1>
+          <p class="role" data-en="Junior Software Developer" data-fr="Développeur logiciel junior"></p>
+          <p data-en="I’m currently studying computer science at Cégep Édouard-Montpetit. 
+            I’m building this portfolio as a way to share what I’ve been learning along the way, while developing projects, 
+            applying what I learn in class, and exploring new tools on my own.
+            Even though I’m still in training, I’m motivated to keep improving as a developer, 
+            learning through experience, and growing step by step in this field that constantly challenges and inspires me." 
+            data-fr="Je suis actuellement étudiant en informatique au Cégep Édouard-Montpetit. Je construis ce portfolio pour partager ce que j'apprends en cours de route, 
+            en développant des projets, en appliquant ce que j'apprends en classe et en explorant de nouveaux outils par moi-même.Même si je suis encore en formation, 
+            je suis motivé à continuer à m'améliorer en tant que développeur, à apprendre par l'expérience et à grandir pas à pas dans ce domaine qui me défie 
+            et m'inspire constamment." class="lead">
+          </p>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT  -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 data-en="About" data-fr="À propos"></h2>
+        <p data-en="I’m a second-year computer science student. Throughout my studies, I’ve worked with languages such as C#, 
+          JavaScript, SQL, HTML/CSS, and Kotlin.
+          I’m focused on building solid programming skills through projects, hands-on practice, and continuous learning. 
+          I try to write clean code and apply good development practices, knowing there’s still a lot to discover and improve.
+          This portfolio represents a part of my journey in software development, with the intention of continuing to grow, 
+          learn, and explore new possibilities." 
+          data-fr="Je suis étudiant en deuxième année d'informatique. Au cours de mes études, j'ai travaillé avec des langages tels que C#, JavaScript, SQL, HTML/CSS et Kotlin.
+          Je me concentre sur le développement de compétences solides en programmation à travers des projets, une pratique concrète et un apprentissage continu. 
+          J'essaie d'écrire du code propre et d'appliquer de bonnes pratiques de développement, sachant qu'il y a encore beaucoup à découvrir et à améliorer.
+          Ce portfolio représente une partie de mon parcours dans le développement logiciel, avec l'intention de continuer à grandir, à apprendre 
+          et à explorer de nouvelles possibilités." class="about-lead">
+          
+        </p>
+
+        <ul class="skills-grid" aria-label="Skills">
+          <li><i class="devicon-csharp-plain"></i><span data-en="C# / .NET" data-fr="C# / .NET"></span></li>
+          <li><i class="devicon-mysql-plain"></i><span data-en="SQL" data-fr="SQL"></span></li>
+          <li><i class="devicon-javascript-plain"></i><span data-en="JavaScript" data-fr="JavaScript"></span></li>
+          <li><i class="devicon-html5-plain"></i><span data-en="HTML" data-fr="HTML"></span></li>
+          <li><i class="devicon-css3-plain"></i><span data-en="CSS" data-fr="CSS"></span></li>
+          <li><i class="devicon-kotlin-plain"></i><span data-en="Kotlin (Android)"" data-fr="Kotlin (Android)"></span></li>
+          <li><i class="devicon-git-plain"></i><span data-en="Git" data-fr="Git">Git</span></li>
+          <li><i class="devicon-github-original"></i><span data-en="GitHub" data-fr="GitHub"></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 data-en="Projects" data-fr="Projets"> <span data-en="Coming soon" data-fr="Bientôt disponible" class="badge"></span></h2>
+        <p data-en="I’m currently building a full-stack app (.NET + JS), an Android app (Kotlin), and a small PWA." 
+        data-fr="Je construis actuellement une application full-stack (.NET + JS), une application Android (Kotlin) et une petite PWA." class="coming-note"></p>
+
+        <div class="cards">
+          <article class="card coming" >
+            <h3 data-en="Full-stack App" data-fr="Application Full-stack"></h3>
+            <p data-en="Authentication, REST API, SQL database, CI/CD. Metrics and README included." 
+            data-fr="Authentification, API REST, base de données SQL, CI/CD. Métriques et README inclus."></p>
+            <p><a data-en="Demo (Soon)" data-fr="Demo (Bientôt)" class="btn btn-disabled" aria-disabled="true"></a> <a data-en="Repo" data-fr="Repo" class="btn btn-ghost" href="#" aria-disabled="true"></a></p>
+            
+          </article>
+
+          <article class="card coming">
+            <h3 data-en="Android App" data-fr="Application Android"></h3>
+            <p data-en="Room + ViewModel, filters and CSV export. Unit tests and signed APK." 
+            data-fr="Room + ViewModel, filtres et export CSV. Tests unitaires et APK signé."></p>
+            <p><a data-en="Demo (Soon)" data-fr="Demo (Bientôt)" class="btn btn-disabled" aria-disabled="true"></a> <a data-en="Repo" data-fr="Repo" class="btn btn-ghost" href="#" aria-disabled="true"></a></p>
+            
+          </article>
+
+          <article class="card coming" >
+            <h3 data-en="PWA Utility" data-fr="PWA Utilitaire"></h3>
+            <p data-en="Offline-first, installable, Lighthouse 95+ with accessible UI." 
+            data-fr="Hors ligne d'abord, installable, Lighthouse 95+ avec interface accessible."></p>
+            <p><a data-en="Demo (Soon)" data-fr="Demo (Bientôt)" class="btn btn-disabled" aria-disabled="true"></a> <a data-en="Repo" data-fr="Repo" class="btn btn-ghost" href="#" aria-disabled="true"></a></p>
+            
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT --> 
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 data-en="Contact" data-fr="Contact"></h2>
+        <p data-en="Want to chat? Email me or DM on LinkedIn — I reply within 24h." 
+        data-fr="Envie de discuter ? Envoyez-moi un e-mail ou un message sur LinkedIn — je réponds dans les 24 heures."></p>
+        <p class="contact-actions">
+          <a class="btn" href="mailto:nicolasargumeropalacios@gmail.com"><i class="bi bi-envelope-fill"></i> Email</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/nicolas-palacios-23a700352/" target="_blank" rel="noopener">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Nicolas</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="Script/script.js"></script>
+</body>
+</html>
