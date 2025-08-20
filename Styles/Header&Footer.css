@@ -47,7 +47,8 @@
 
 @media (max-width: 420px){ 
     .nav-list .btn{ 
-        display:none; 
+        display:flex;
+        justify-content: center; 
     }
 }
 
