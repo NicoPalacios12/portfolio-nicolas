@@ -58,7 +58,7 @@
 
   
   body.nav-open .nav-toggle .bar:nth-child(1){ transform:translateY(9px) rotate(45deg) }
-  body.nav-open .nav-toggle .bar:nth-child(2){ opacity:0 }
+  body.nav-open .nav-toggle .bar:nth-child(2){ opacity:0 !important }
   body.nav-open .nav-toggle .bar:nth-child(3){ transform:translateY(-6px) rotate(-45deg) }
 }
 
