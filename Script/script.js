@@ -10,22 +10,6 @@
   window.addEventListener('resize', setHeaderVar);
 
   
-  function headerOffset(){
-    return parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 0;
-  }
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const href = a.getAttribute('href');
-      if (!href || href === '#') return;
-      const target = document.querySelector(href);
-      if (!target) return;
-      e.preventDefault();
-      const top = target.getBoundingClientRect().top + window.scrollY - (headerOffset() + 8);
-      window.scrollTo({ top, behavior: 'smooth' });
-    });
-  });
-
-  
   const links = [...document.querySelectorAll('.nav-list a')];
   const sections = ['home','about','projects','contact']
     .map(id => document.getElementById(id))
@@ -103,6 +87,7 @@ window.matchMedia('(min-width: 769px)').addEventListener('change', e => {
     if (typeof val === 'string') el.textContent = val;
   });
 
+    document.documentElement.lang = lang;
   
   const nameText = nameEl ? (nameEl.dataset[lang] || '') : '';
   if (nameEl) typewriter(nameText);
@@ -110,6 +95,8 @@ window.matchMedia('(min-width: 769px)').addEventListener('change', e => {
  
   const btn = document.getElementById('lang-btn');
   if (btn) btn.textContent = (lang === 'en') ? 'FR' : 'EN';
+
+
 }
   
 

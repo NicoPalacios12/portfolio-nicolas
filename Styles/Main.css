@@ -17,7 +17,8 @@
   box-sizing:border-box
 }
 html{
-  scroll-behavior:smooth
+  scroll-behavior:smooth;
+  scroll-padding-top:var(--header-h);
 }
 @media (prefers-reduced-motion: reduce){ 
   html{scroll-behavior:auto} 
